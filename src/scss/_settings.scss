@@ -12,6 +12,7 @@ body {
   margin: 0;
   font-family: "asd", sans-serif;
   background-color: var(--color-white);
+  font-size: 62.5%;
 }
 
 img {
@@ -66,4 +67,99 @@ ul {
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.container {
+  max-width: 1440px;
+}
+
+.nav {
+  background: red;
+}
+
+
+.ul-item {
+  position: relative;
+  padding: 10px;
+  font-size: 22px;
+}
+
+.ul-item:hover {
+  .submenu {
+    background: #fff;
+    width: 180px;
+    display: block;
+  }
+}
+
+.ul-main {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.afternav {
+  background-image: url(../img/3.jpg);
+  width: 100%;
+  height: 800px;
+  display: none;
+}
+
+.submenu {
+  display:none;
+  position: absolute;
+  top:32px;
+}
+
+.main__title {
+  font-size: 60px;
+}
+
+.descr {
+  font-size: 54px;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.all-btns {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+}
+
+.block1 {
+  //max-width: 120px;
+  max-width: 30vw;
+  border: 2px solid red;
+  padding: 2px 10px;
+}
+
+.block2 {
+  //max-width: 160px;
+  max-width: 250px;
+  display: inline-block;
+  border: 2px solid red;
+  padding: 2px 10px;
+}
+
+.block3 {
+  //max-width: 80px;
+  display: inline-block;
+  max-width: 160px;
+  border: 2px solid red;
+  padding: 2px 10px;
+}
+
+.block4 {
+  max-width: 120px;
+  display: inline-block;
+  border: 2px solid red;
+  padding: 2px 10px;
+}
+
+.btn-block {
+  font-size: 2.2rem;
+  margin: 0 10px;
 }
