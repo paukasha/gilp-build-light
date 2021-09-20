@@ -61,8 +61,8 @@ ul {
 
 .container {
   margin: 0 auto;
-  padding: 0 15px;
-  max-width: 1200px;
+  padding: 0 20px;
+  max-width: 1440px;
 }
 
 .js-focus-visible :focus:not(.focus-visible) {
@@ -163,3 +163,125 @@ ul {
   font-size: 2.2rem;
   margin: 0 10px;
 }
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}
+
+.left-gallery {
+  width: 959px;
+}
+
+.right-gallery {
+  width: 255px;
+}
+
+.right-galley-item {
+  position: relative;
+  opacity: 0.4;
+}
+
+.right-gallery-text {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  color: white;
+}
+
+.no-current {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.current-item {
+  z-index: 5;
+  background: rgba(255, 255, 255, 0.7);
+
+}
+
+.current {
+  opacity: 1;
+}
+
+.one-swiper {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+
+}
+
+
+.main-swiper {
+  margin-bottom: 200px;
+
+}
+
+.anybloc {
+  position: relative;
+}
+
+.one-swiper-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+
+.two-swiper {
+  display: flex;
+  flex-direction: column;
+  width: 312px;
+}
+
+.two-swiper-block {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.prev-btn,
+.next-btn {
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.7);
+  transition: background, background-image 0.3s ease;
+  position: absolute;
+  top: 50%;
+  z-index: 50;
+  border-radius: 100%;
+  background-size: 40px 40px;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.prev-btn-img,
+.next-btn-img {
+  display: inline-block;
+  width: 30px;
+}
+
+.prev-btn {
+  left:0;
+  transform: translate(-50%, -50%);
+}
+
+.next-btn {
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.prev-btn:hover,
+.next-btn:hover {
+  background: rgba(255, 255, 255, 0.9);
+  transition: background 0.3s ease;
+}
+
+
