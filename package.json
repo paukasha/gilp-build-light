@@ -9,7 +9,9 @@
 		"build": "gulp build",
 		"cache": "gulp cache",
     "backend": "gulp backend",
-    "code": "editorconfig-checker"
+    "code": "editorconfig-checker",
+    "stylelint": "stylelint '**/*{.css,.scss}'",
+    "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
   },
   "author": "MaxGraph",
   "license": "ISC",
