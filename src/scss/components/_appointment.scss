@@ -17,6 +17,11 @@
   }
 }
 
+
+.btn-later {
+  letter-spacing: 1.5px;
+}
+
 .paid-appoint {
   margin-bottom: 39px;
 
@@ -71,8 +76,7 @@
   max-width: 1154px;
   border: 1px solid #C8C8C8;
   border-radius: 15px;
-  //display: table;
-
+  margin-bottom: 47px;
 
   &__row {
     display: flex;
@@ -89,8 +93,8 @@
 
 
   &__column {
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
 
     &:first-child {
       width: 21%;
@@ -102,10 +106,25 @@
     }
   }
 
-  &__image {
-    width: 208px;
-    height: 231px;
+  &-doc {
+    &__image {
+      display: block;
+      width: 208px;
+      height: 231px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      display: block;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 23px;
+
+    }
+
   }
+
 
   &__last {
     border-bottom: none;
@@ -126,6 +145,15 @@
     align-items: center;
   }
 
+  &__calendar {
+    width: 85px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
   &__time {
 
     &-block {
@@ -135,15 +163,31 @@
     }
   }
 
-  &__day {
+  &__appoint-time {
+    height: 35px;
+    background: #D9F1FF;
+    margin-bottom: 10px;
     width: 85px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    &--active {
+      background: #A5FADB;
+    }
+  }
+
+  &__appoint-block {
+    align-items: baseline;
+  }
+
+  &__day {
+
     height: 75px;
     background: #C8E5F7;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+
 
     span {
       display: block;

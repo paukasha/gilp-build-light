@@ -151,6 +151,10 @@
   content: "/";
 }
 
+.btn-later {
+  letter-spacing: 1.5px;
+}
+
 .paid-appoint {
   margin-bottom: 39px;
 }
@@ -198,16 +202,13 @@
   max-width: 1154px;
   border: 1px solid #C8C8C8;
   border-radius: 15px;
+  margin-bottom: 47px;
 }
 .schedule__row {
   display: flex;
 }
 .schedule__row:not(:last-child) {
   border-bottom: 1px solid #C8C8C8;
-}
-.schedule__column {
-  display: flex;
-  justify-content: center;
 }
 .schedule__column:first-child {
   width: 21%;
@@ -216,9 +217,18 @@
 .schedule__column:not(:last-child) {
   border-right: 1px solid #C8C8C8;
 }
-.schedule__image {
+.schedule-doc__image {
+  display: block;
   width: 208px;
   height: 231px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.schedule-doc__name {
+  display: block;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 23px;
 }
 .schedule__last {
   border-bottom: none;
@@ -236,20 +246,39 @@
   justify-content: space-between;
   align-items: center;
 }
-.schedule__time-block {
-  max-width: 100%;
-  width: 902px;
-  padding: 16px 37px;
-}
-.schedule__day {
+.schedule__calendar {
   width: 85px;
-  height: 75px;
-  background: #C8E5F7;
   border-radius: 5px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.schedule__time-block {
+  max-width: 100%;
+  width: 902px;
+  padding: 16px 37px;
+}
+.schedule__appoint-time {
+  height: 35px;
+  background: #D9F1FF;
+  margin-bottom: 10px;
+  width: 85px;
+  border-radius: 5px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.schedule__appoint-time--active {
+  background: #A5FADB;
+}
+.schedule__appoint-block {
+  align-items: baseline;
+}
+.schedule__day {
+  height: 75px;
+  background: #C8E5F7;
 }
 .schedule__day span {
   display: block;
@@ -271,7 +300,6 @@
   font-size: 12px;
   line-height: 14px;
   text-align: center;
-  margin-top: 92px;
   margin-bottom: 30px;
 }
 .privacy input {
