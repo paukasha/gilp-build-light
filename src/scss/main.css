@@ -1,0 +1,326 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Light.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Regular.woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Medium.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Bold.woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+.signin {
+  display: flex;
+  padding: 0 94px;
+}
+.signin__block {
+  padding: 67px 60px;
+  width: 50%;
+}
+.signin__block:first-child {
+  border-right: 0.9px solid #C9C9C9;
+}
+.signin .no-register .first__link {
+  padding-top: 10px;
+}
+.signin .no-register__link {
+  display: inline-block;
+  padding: 8px 0;
+  font-size: 18px;
+  line-height: 25px;
+  color: #3C3C3C;
+}
+.signin .no-register__link--active {
+  color: #0064A1;
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+}
+.account__title {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #3C3C3C;
+  margin-bottom: 20px;
+}
+.account__btns {
+  margin: 0 12px;
+  margin-bottom: 16px;
+  width: 233px;
+  border-bottom: 0.5px solid #C5C5C5;
+}
+.account-in__btn {
+  display: inline-block;
+  position: relative;
+  padding: 4px;
+  outline: none !important;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+  color: #3C3C3C;
+}
+.account-in__btn--active::after {
+  content: "";
+  display: block;
+  color: #007DC6;
+  border-bottom: 2px solid #007DC6;
+  height: 2px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+}
+.account__input {
+  display: inline-block;
+  width: 315px;
+  padding: 8px;
+  margin-bottom: 20px;
+  background: #FFFFFF;
+  border: 1.5px solid #C4C4C4;
+  border-radius: 20px;
+  transition: border 0.3s ease;
+  outline: none !important;
+}
+.account__input::placeholder {
+  font-weight: 300;
+  color: rgba(114, 114, 114, 0.88);
+}
+.account__input:hover {
+  border: 1.5px solid #007DC6;
+  transition: border 0.3s ease;
+}
+.account__btn-send {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: center;
+  color: #007DC6;
+  background: #FFFFFF;
+  border: 1.5px solid #007DC6;
+  border-radius: 30px;
+  width: 181px;
+  height: 37px;
+  letter-spacing: 1.1px;
+  transition: background 0.6s ease, color 0.6s ease;
+  margin-bottom: 36px;
+}
+.account__btn-send:hover {
+  color: #FFFFFF;
+  background: #007DC6;
+  transition: bakground 0.6s ease, color 0.6s ease;
+}
+.account__descr {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: #323232;
+}
+
+.time-padding {
+  padding: 0 88px;
+  padding-top: 181px;
+}
+
+.breadcrumbs {
+  margin-bottom: 25px;
+}
+.breadcrumbs__text {
+  font-weight: 300;
+  font-size: 15px;
+}
+.breadcrumbs__text:not(:last-child)::after {
+  content: "/";
+}
+
+.paid-appoint {
+  margin-bottom: 39px;
+}
+.paid-appoint__title {
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0;
+  display: inline-block;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.choice-btns {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+}
+.choice-btns:not(:last-child) {
+  margin-bottom: 46px;
+}
+.choice-btns__all {
+  display: inline-block;
+  padding: 0;
+  width: 336px;
+  height: 41px;
+  background: transparent;
+  border: 1px solid #D9F1FF;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+.choice-btns__us {
+  color: #007DC6;
+}
+.choice-btns--active {
+  background: #007DC6;
+  color: white;
+}
+.choice-btns__select {
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.schedule {
+  max-width: 1154px;
+  border: 1px solid #C8C8C8;
+  border-radius: 15px;
+}
+.schedule__row {
+  display: flex;
+}
+.schedule__row:not(:last-child) {
+  border-bottom: 1px solid #C8C8C8;
+}
+.schedule__column {
+  display: flex;
+  justify-content: center;
+}
+.schedule__column:first-child {
+  width: 21%;
+  padding: 21px;
+}
+.schedule__column:not(:last-child) {
+  border-right: 1px solid #C8C8C8;
+}
+.schedule__image {
+  width: 208px;
+  height: 231px;
+}
+.schedule__last {
+  border-bottom: none;
+}
+.schedule__title {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #3C3C3C;
+  margin: 0;
+  padding: 0;
+}
+.schedule__time-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.schedule__time-block {
+  max-width: 100%;
+  width: 902px;
+  padding: 16px 37px;
+}
+.schedule__day {
+  width: 85px;
+  height: 75px;
+  background: #C8E5F7;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.schedule__day span {
+  display: block;
+  line-height: 21px;
+}
+.schedule__number {
+  font-size: 22px;
+  font-weight: bold;
+  color: #3C3C3C;
+}
+.schedule__weekday {
+  color: #9da1a4;
+  font-size: 20px;
+}
+
+.privacy {
+  display: flex;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 92px;
+  margin-bottom: 30px;
+}
+.privacy input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.privacy input:checked + span::before {
+  content: "✔";
+  padding-top: 5px;
+}
+.privacy span {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+  text-align: center;
+}
+.privacy span::before {
+  content: "";
+  display: inline-block;
+  width: 26px;
+  height: 25px;
+  background-size: 50% 50%;
+  background: #F4F4F4;
+  border: 0.5px solid rgba(190, 190, 190, 0.8);
+  box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  font-size: 28px;
+}
+.privacy__link {
+  display: inline-block;
+  margin-left: 4px;
+  color: #0064A1;
+}
+
+.all-btn {
+  background: #007DC6;
+  color: white;
+  display: inline-block;
+  padding: 0;
+  height: 41px;
+  border: 1px solid #D9F1FF;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-later {
+  width: 200px;
+}
+
+/*# sourceMappingURL=main.css.map */

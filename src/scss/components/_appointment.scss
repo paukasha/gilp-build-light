@@ -1,0 +1,164 @@
+.time-padding {
+  padding: 0 88px;
+  padding-top: 181px;
+
+}
+
+.breadcrumbs {
+  margin-bottom: 25px;
+
+  &__text {
+    font-weight: 300;
+    font-size: 15px;
+
+    &:not(:last-child)::after {
+      content: '/';
+    }
+  }
+}
+
+.paid-appoint {
+  margin-bottom: 39px;
+
+  &__title {
+    margin: 0;
+    margin-bottom: 36px;
+    padding: 0;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+.choice-btns {
+  max-width: 700px;
+  display: flex;
+  justify-content: space-between;
+
+  &:not(:last-child) {
+    margin-bottom: 46px;
+  }
+
+  &__all {
+    display: inline-block;
+    padding: 0;
+    width: 336px;
+    height: 41px;
+    background: transparent;
+    border: 1px solid #D9F1FF;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  &__us {
+    color: #007DC6;
+  }
+
+  &--active {
+    background: #007DC6;
+    color: white;
+  }
+
+  &__select {
+    font-weight: 300;
+    font-size: 20px;
+  }
+}
+
+.schedule {
+  //border-collapse: unset;
+  max-width: 1154px;
+  border: 1px solid #C8C8C8;
+  border-radius: 15px;
+  //display: table;
+
+
+  &__row {
+    display: flex;
+
+    &:first-child {
+      //min-height: 106px;
+    }
+
+
+    &:not(:last-child) {
+      border-bottom: 1px solid #C8C8C8;
+    }
+  }
+
+
+  &__column {
+    display: flex;
+    justify-content: center;
+
+    &:first-child {
+      width: 21%;
+      padding: 21px;
+    }
+
+    &:not(:last-child) {
+      border-right: 1px solid #C8C8C8;
+    }
+  }
+
+  &__image {
+    width: 208px;
+    height: 231px;
+  }
+
+  &__last {
+    border-bottom: none;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 300;
+    text-align: center;
+    color: #3C3C3C;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__time-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__time {
+
+    &-block {
+      max-width: 100%;
+      width: 902px;
+      padding: 16px 37px
+    }
+  }
+
+  &__day {
+    width: 85px;
+    height: 75px;
+    background: #C8E5F7;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      display: block;
+      line-height: 21px;
+    }
+  }
+
+  &__number {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3C3C3C;
+  }
+
+  &__weekday {
+    color: #9da1a4;
+    font-size: 20px;
+  }
+}

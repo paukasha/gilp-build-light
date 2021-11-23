@@ -134,7 +134,7 @@ const watchFiles = () => {
 }
 
 const cache = () => {
-  return src('app/**/*.{css,js,svg,png,jpg,jpeg,woff2}', {
+  return src('app/**/*.{css,js,svg,png,jpg,jpeg,woff2, woff, ttf}', {
     base: 'app'})
     .pipe(rev())
     .pipe(revDel())

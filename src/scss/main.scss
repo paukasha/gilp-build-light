@@ -1,4 +1,99 @@
 // @import 'vars'; если используете scss-переменные - подключите сюда vars, но удалите root из _vars.scss
 
-@import "./components/header";
-@import "./components/depart-item";
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Light.woff");
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Regular.woff");
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Medium.ttf");
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Roboto;
+  src: url("../resources/fonts/Roboto-Bold.woff");
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+
+@import "./components/new-layout-autorized";
+@import "./components/appointment";
+
+.privacy {
+  display: flex;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  margin-top: 92px;
+  margin-bottom: 30px;
+
+  input {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+    &:checked + span::before {
+      content: '\2714';
+      padding-top: 5px;
+    }
+  }
+
+  span {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+    text-align: center;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      width: 26px;
+      height: 25px;
+      background-size: 50% 50%;
+      background: #F4F4F4;
+      border: 0.5px solid rgba(190, 190, 190, 0.8);
+      box-shadow: inset 0 2px 2px rgba(0, 0, 0, 0.1);
+      margin-right: 10px;
+      font-size: 28px;
+    }
+  }
+
+  &__link {
+    display: inline-block;
+    margin-left: 4px;
+    color: #0064A1;
+  }
+}
+
+.all-btn {
+  background: #007DC6;
+  color: white;
+  display: inline-block;
+  padding: 0;
+  height: 41px;
+  border: 1px solid #D9F1FF;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btn-later {
+  width: 200px;
+}

@@ -1,0 +1,134 @@
+.signin {
+  display: flex;
+  padding: 0 94px;
+
+  &__block {
+    padding: 67px 60px;
+    width: 50%;
+
+    &:first-child {
+      border-right: 0.9px solid #C9C9C9;
+    }
+  }
+
+  .no-register {
+
+    .first__link {
+      padding-top: 10px;
+    }
+
+    &__link {
+      display: inline-block;
+      padding: 8px 0;
+      font-size: 18px;
+      line-height: 25px;
+      color: #3C3C3C;
+
+      &--active {
+        color: #0064A1;
+      }
+    }
+
+
+  }
+}
+
+.account {
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    color: #3C3C3C;
+    margin-bottom: 20px;
+  }
+
+  &__btns {
+    margin: 0 12px;
+    margin-bottom: 16px;
+    width: 233px;
+    border-bottom: 0.5px solid #C5C5C5;
+  }
+
+  &-in__btn {
+    display: inline-block;
+    position: relative;
+    padding: 4px;
+    outline: none !important;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #3C3C3C;
+
+
+    &--active {
+      &::after {
+        content: "";
+        display: block;
+        color: #007DC6;
+        border-bottom: 2px solid #007DC6;
+        height: 2px;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        width: 100%;
+      }
+    }
+  }
+
+  &__input {
+    display: inline-block;
+    width: 315px;
+    padding: 8px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    border: 1.5px solid #C4C4C4;
+    border-radius: 20px;
+    transition: border 0.3s ease;
+    outline: none !important;
+
+    &::placeholder {
+      font-weight: 300;
+      color: rgba(114, 114, 114, 0.88);
+    }
+
+    &:hover {
+      border: 1.5px solid #007DC6;
+      transition: border 0.3s ease;
+    }
+  }
+
+
+
+  &__btn-send {
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #007DC6;
+    background: #FFFFFF;
+    border: 1.5px solid #007DC6;
+    border-radius: 30px;
+    width: 181px;
+    height: 37px;
+    letter-spacing: 1.1px;
+    transition: background 0.6s ease, color .6s ease;
+    margin-bottom: 36px;
+
+    &:hover {
+      color: #FFFFFF;
+      background: #007DC6;
+      transition: bakground 0.6s ease, color .6s ease;
+    }
+  }
+
+  &__descr {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+  }
+
+
+}
